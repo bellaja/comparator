@@ -17,6 +17,7 @@ public class Main {
         valkyries.add(new Person("Fu", "Hua", 50000));
 
 
+
         valkyries.sort(new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
