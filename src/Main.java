@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Predicate;
 
 
 public class Main {
@@ -14,6 +15,8 @@ public class Main {
         valkyries.add(new Person("Murata", "Himeko", 27));
         valkyries.add(new Person("Theresa", "Apocalypse", 44));
         valkyries.add(new Person("Fu", "Hua", 50000));
+
+        valkyries.removeIf(q -> q.getAge() < 18);
 
         Collections.sort(valkyries, new ComparatorClass());
         System.out.println(valkyries);
